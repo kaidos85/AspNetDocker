@@ -43,7 +43,9 @@ namespace AspCoreDocker
                 app.UseDeveloperExceptionPage();
             }
             app.ConfigureExceptionHandler(logger);
-            app.UseMvc();
+            app.UseMvc();            
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
         }
     }
 }
